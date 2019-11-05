@@ -3,18 +3,50 @@
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
-    <script="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="js/scripts/js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title></title>
   </head>
   <body>
     <h1>this is how to make a movie ticket</h1>
     <div class="container">
-      <form id="input">
-        <label for="q1"></label>
-        <input id="q1">
+      <form id="chooseTicket">
+        <div class="form-group">
+          <h3>Movies Today</h3>
+          <div class="imgs">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjA0YjYyZGMtN2U0Ni00YmY4LWJkZTItYTMyMjY3NGYyMTJkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_UX182_CR0,0,182,268_AL_.jpg" id="fr2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxdYrSwU8yc3w4_DsCCze_Jp_cE8IS5terR5wzv-Hm4PmmPoq_Fw&s">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/01/HarrietFilmPoster.jpeg" id="har">
+            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201908/joke3-770x433.jpeg?aKheQ2JCH.vO1i.AssFzr56j3LuGzRCP">
+            <img src="https://misfitkarma.com/image/259325-full_look-at-this-angry-fat-piece-of-amino.gif" id="gn">
+          </div>
+
+          <input id= "m1" class = "movies" type="radio" name="movies">Frozen2
+          <input id = "m2" class = "movies" type="radio" name="movies">Terminator
+          <input id = "m3" class = "movies" type="radio" name="movies">Harriet
+          <input id = "m4" class = "movies" type="radio" name="movies">Joker
+          <input id = "m5" class = "movies" type="radio" name="movies">The Dancing Gnomes of Gnorway
+        </div>
+
+        <div class="form-group">
+          <label>Time of the Day</label>
+          <select class="form-control" id="Time">
+            <option>Morning</option>
+            <option>Afterrnoon</option>
+            <option>Evening</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Ticket Type</label>
+          <select class="form-control" id="Time">
+            <option>Child</option>
+            <option>Adult</option>
+            <option>Senior</option>
+          </select>
+        </div>
         <button type="submit">Enter!</button>
-      </form>
-    </div>
-  </body>
+    </form>
+  </div>
+</body>
 </html>

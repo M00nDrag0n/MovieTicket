@@ -1,0 +1,41 @@
+body {
+  font-family: 'Spectral';
+  font-size: 20px;
+}
+
+
+
+
+
+
+.movies {
+  margin: 10px;
+}
+
+
+
+.imgs img {
+  height: 200px;
+  width: 400px;
+}
+
+#fr2 {
+  width: 150px;
+}
+
+#har {
+  width: 150px;
+}
+
+#gn {
+  width: 120px;
+  opacity: 10%;
+}
+
+#gn:hover {
+  position: absolute;
+  top: 50px;
+  left: 650px;
+  opacity: 150%;
+  height: 500px;
+}

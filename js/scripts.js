@@ -5,11 +5,11 @@ function Ticket() {
   this.currentId = 0
 };
 
-function ticketContents(movie, peopleAmount, time, seatNumber) {
+function ticketContents(movieTitle, age, time, movieStatus) {
   this.movie = movie;
-  this.people = peopleAmount;
+  this.people = age;
   this.time = time;
-  this.seatNumber = seatNumber;
+  this.movieStatus = movieStatus;
 }
 
 Ticket.prototype.addTicketContents = function(ticketContents) {
@@ -42,8 +42,8 @@ Ticket.prototype.deleteTicketContents =  function(id) {
     }
   }
 };
-return false;
-}
+// // return false;
+// }
 
 
 
@@ -52,19 +52,19 @@ $(document).ready(function() {
   $("#input").submit(function(event) {
     event.preventDefault();
     var newMovie = $("input#movie").vai();
-    var newPeopleAmount = $("input#peopleAmount").vai();
+    var newPeopleAmount = $("input#age").vai();
     var newTime = $("input#time").vai();
-    var newSeatNumber = $("input#seatNumber").vai();
+    var newSeatNumber = $("input#movieStatus").vai();
   });
 
 
 
 // this is attached to data above
 ticketContents.prototype.display = function () {
-  $("#return-movie").text(this.ticketTitle);
-  $("#return-peopleAmount").text(this.ticketDate);
-  $("#return-time").text(this.time);
-  $("#return-seatNumber").text(this.seatNumber);
+  $("#return-movieTitle").text(this.ticketTitle);
+  $("#return-age").text(this.ticketAge);
+  $("#return-time").text(this.ticketTime);
+  $("#return-movieStatus").text(this.movieStatus);
 };
 
 
