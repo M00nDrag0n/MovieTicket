@@ -6,7 +6,7 @@ function Ticket() {
 };
 
 function ticketContents(movieTitle, age, time, movieStatus) {
-  this.movie = movie;
+  this.movieTitle = movieTitle;
   this.people = age;
   this.time = time;
   this.movieStatus = movieStatus;
@@ -51,10 +51,10 @@ Ticket.prototype.deleteTicketContents =  function(id) {
 $(document).ready(function() {
   $("#input").submit(function(event) {
     event.preventDefault();
-    var newMovie = $("input#movie").vai();
-    var newPeopleAmount = $("input#age").vai();
-    var newTime = $("input#time").vai();
-    var newSeatNumber = $("input#movieStatus").vai();
+    var newMovie = $("input#movie").val();
+    var newPeopleAmount = $("input#age").val();
+    var newTime = $("input#time").val();
+    var newSeatNumber = $("input#movieStatus").val();
   });
 
 
