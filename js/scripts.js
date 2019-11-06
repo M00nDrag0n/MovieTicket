@@ -7,7 +7,7 @@ function Ticket() {
 
 function ticketContents(movieTitle, age, time, movieStatus) {
   this.movieTitle = movieTitle;
-  this.people = age;
+  this.age = age;
   this.time = time;
   this.movieStatus = movieStatus;
 }
@@ -52,11 +52,12 @@ $(document).ready(function() {
   $("#input").submit(function(event) {
     event.preventDefault();
     var newMovie = $("input#movie").val();
-    var newPeopleAmount = $("input#age").val();
+    var newAgeAmount = $("input#age").val();
     var newTime = $("input#time").val();
     var newSeatNumber = $("input#movieStatus").val();
-  });
 
+
+    let priceTotal = 0;
 
 
 // this is attached to data above
@@ -69,18 +70,31 @@ ticketContents.prototype.display = function () {
 
 
 
+});
 
 
+// variable (let) which will end up changing
+
+if (this.age === "Child")
+
+else if {
+
+} else {
+
+};
+
+// (this.age === "Adult")
+// (this.age === "Senior")
 
 
+// this.movieTitle = movieTitle;
+// this.people = age;
+// this.time = time;
+// this.movieStatus = movieStatus;
 
 
-
-
-
-
-
-
+// NEEDED:
+// if else statement with exact outcomes, each one adds to value totals.
 
 
 //
